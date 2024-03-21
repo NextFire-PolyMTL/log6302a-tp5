@@ -170,8 +170,8 @@ class CFG(Graph):
 
             image = self.get_image(key)
             if image is not None:
-                if len(image) >= 40:
-                    image = image[:40 - 3] + "..."
+                # if len(image) >= 40:
+                #     image = image[:40 - 3] + "..."
                 image = image.replace("\"", "'")
                 image = image.replace("\\", "")
                 image = image.replace("/", "")
@@ -179,7 +179,7 @@ class CFG(Graph):
                 image = image.replace("<", "&lt;")
                 image = image.replace(">", "&gt;")
                 image = image.replace("\r", "")
-                image = image.replace("\n", " ")
+                image = image.replace("\n", "<BR/>")
 
             cell_style = "border='0'"
             table_style = "border='1' cellspacing='0' cellpadding='10' style='rounded'"
