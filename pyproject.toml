@@ -6,6 +6,7 @@ python = "~3.12"
 numpy = "^1.26.3"
 graphviz = "^0.20.1"
 pillow = "^10.2.0"
+pydantic = "^2.6.4"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.0"
